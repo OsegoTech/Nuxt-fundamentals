@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <NuxtPage></NuxtPage> -->
     <nav>
       <NuxtLink to="/">home</NuxtLink>
       <NuxtLink to="/movies">movies</NuxtLink>
@@ -8,3 +7,12 @@
     <NuxtPage/>
   </div>
 </template>
+
+<script setup ts>
+useHead({
+  // title: "My movie Site",
+  titleTemplate: (titleChunk) => {
+    return titleChunk? `${titleChunk} - My movie site`: "My movie site"
+  }
+})
+</script>
