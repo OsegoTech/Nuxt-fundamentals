@@ -2,12 +2,14 @@
 
 
 
-const query = ref("")
+const query = ref("sex education")
 const movies = ref([])
 async function search (){
     const {Search} = await $fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=6c94eee8&s=${query.value}`)
     movies.value = Search
 }
+
+search()
 </script>
 
 <template>
