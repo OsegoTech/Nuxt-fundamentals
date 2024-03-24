@@ -1,10 +1,9 @@
 <template>
   <div>
-    <nav>
-      <NuxtLink to="/">home</NuxtLink>
-      <NuxtLink to="/movies">movies</NuxtLink>
-    </nav>
-    <NuxtPage/>
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
+    
   </div>
 </template>
 
